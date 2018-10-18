@@ -1,0 +1,37 @@
+.playlist{
+    display:grid;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    grid-template-columns: 1fr;
+    grid-gap:1rem;
+    
+    &__item{
+        border:1px solid #2c5364;
+        display: flex;
+        align-items:center;
+        cursor: pointer;
+        transition: all .1s;
+        &:hover{
+            border-color: orangered;
+            box-shadow: 0 .5rem 1rem orangered;
+            transform: scale(1.2);
+            transform: translateY(-3px);
+            }
+        &__img{
+            height:120px;
+
+           align-content: center;
+           
+            img{
+                height: 100%;
+                margin-right: 2rem;
+            }
+
+        }
+        &__title{
+            font-size: 15px;
+            color:#2c5364;
+        }
+    }
+}
